@@ -1,8 +1,8 @@
 // pages/api/roll.js
-import { db, initializePlayer } from "../../lib/db";
-import { players, bets } from "../../lib/schema";
+import { db, initializePlayer } from "@lib/db";
+import { players, bets } from "@lib/schema";
 import { eq } from "drizzle-orm";
-import { MIN_BET, MAX_BET } from "../../lib/utils";
+import { MIN_BET, MAX_BET } from "@lib/utils";
 import { randomInt } from "crypto";
 
 export default async function handler(req, res) {

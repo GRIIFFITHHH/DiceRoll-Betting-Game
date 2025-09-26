@@ -1,8 +1,8 @@
 // pages/api/faucet.js
-import { db, initializePlayer } from "../../lib/db";
-import { players } from "../../lib/schema";
+import { db, initializePlayer } from "@lib/db";
+import { players } from "@lib/schema";
 import { eq } from "drizzle-orm";
-import { FAUCET_AMOUNT } from "../../lib/utils";
+import { FAUCET_AMOUNT } from "@lib/utils";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {

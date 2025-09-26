@@ -1,6 +1,6 @@
 // pages/api/bet-history.js
-import { db, initializePlayer } from "../../lib/db";
-import { bets, players } from "../../lib/schema";
+import { db, initializePlayer } from "@lib/db";
+import { bets, players } from "@lib/schema";
 import { desc, eq } from "drizzle-orm";
 
 export default async function handler(req, res) {

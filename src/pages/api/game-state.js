@@ -1,6 +1,6 @@
 // pages/api/game-state.js
-import { db, initializePlayer } from "../../lib/db";
-import { players } from "../../lib/schema";
+import { db, initializePlayer } from "@lib/db";
+import { players } from "@lib/schema";
 
 export default async function handler(req, res) {
   if (req.method !== "GET") {

@@ -1,6 +1,6 @@
 import Database from "better-sqlite3";
 import { drizzle } from "drizzle-orm/better-sqlite3";
-import { players, bets } from "./schema.js";
+import { players, bets } from "@lib/schema.js";
 
 const sqlite = new Database("sqlite.db");
 export const db = drizzle(sqlite, { schema: { players, bets } });

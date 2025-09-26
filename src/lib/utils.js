@@ -6,6 +6,6 @@ export const formatCurrency = (amount) => {
   }).format(amount);
 };
 
-export const FAUCET_AMOUNT = 50.0;
+export const FAUCET_AMOUNT = 100.0;
 export const MIN_BET = 1.0;
-export const MAX_BET = 1000.0;
+export const MAX_BET = 10000.0;
