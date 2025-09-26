@@ -1,6 +1,6 @@
 // pages/index.js
 import { useState, useEffect } from "react";
-import { formatCurrency } from "../lib/utils";
+import { formatCurrency } from "@lib/utils";
 
 export default function Home() {
   const [gameState, setGameState] = useState({
